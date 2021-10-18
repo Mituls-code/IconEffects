@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_bg {
+    height: 70px;
+    width: 70px;
+    background-color: #caf7e3;
+    border-radius: 35px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 1 Effect >>>>>>>>>>>>>>> */
+
+#set-1 {
+    background: #f06060;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 25px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 2 Effect >>>>>>>>>>>>>>> */
+
+#set-2 {
+    background-color: aquamarine;
+}
+
+#set-2 a i {
+    transition: all 0.3s linear;
+}
+
+#set-2 a:hover i {
+    transform: scale(1.5);
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 3 Effect >>>>>>>>>>>>>>> */
+
+#set-3 {
+    background-color: rgb(219, 127, 255);
+}
+
+#set-3 .icon_bg {
+    height: 70px;
+    width: 70px;
+    background-color: #caf7e3;
+    border-radius: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#set-3 .icon_bg:hover {
+    border-style: dashed;
+}
+
+#set-3 a i {
+    transition: all 0.3s linear;
+}
+
+#set-3 a:hover i {
+    transform: scale(1.5);
+}
+
+.spin:hover {
+    animation-name: Circle_Border_Rotate;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Circle_Border_Rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(200deg);
+    }
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 4 Effect >>>>>>>>>>>>>>> */
+
+#set-4 {
+    background: #d4e631;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: #caf7e3;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background-color: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background-color: #e1306c;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background-color: #1da1f2;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background-color: #333;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background-color: #ff0000;
+}
+
+.wrapper .button .icon i {
+    color: #e1306c;
+    font-size: 25px;
+    line-height: 70px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #e1306c;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #1da1f2;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 5 Effect >>>>>>>>>>>>>>> */
+
+#set-5 {
+    background: #9531e6;
+}
+
+#set-5 a i {
+    transition: all 0.3s linear;
+}
+
+#set-5 a:hover i {
+    transform: scale(1.5);
+}
+
+#set-5 .icon_bg:hover {
+    border-bottom-right-radius: calc(3px);
+}
+
+
+/* <<<<<<<<<<<<<<<<<< Set 6 Effect >>>>>>>>>>>>>>> */
+
+#set-6 {
+    background: #c94b75;
+}
+
+#set-6 .icon_bg {
+    background-color: #caf7e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#set-6 .icon_bg:hover {
+    animation-name: Circle_Radios;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Circle_Radios {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
